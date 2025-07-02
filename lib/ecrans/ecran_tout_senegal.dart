@@ -14,13 +14,12 @@ class _EcranToutSenegalState extends State<EcranToutSenegal>
     with TickerProviderStateMixin {
   late AnimationController _controleurChargement;
   late AnimationController _controleurResultat;
-  late Animation<double> _animationProgression;
   late Animation<double> _animationFondu;
 
   bool _enChargement = true;
   bool _aErreur = false;
   String _messageErreur = '';
-  List<ReponseMeteo> _donneesMeteo = [];
+  final List<ReponseMeteo> _donneesMeteo = [];
   double _progression = 0.0;
   int _villesChargees = 0;
 
@@ -38,8 +37,6 @@ class _EcranToutSenegalState extends State<EcranToutSenegal>
       vsync: this,
     );
 
-    _animationProgression =
-        Tween<double>(begin: 0, end: 1).animate(_controleurChargement);
     _animationFondu = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _controleurResultat, curve: Curves.easeIn),
     );

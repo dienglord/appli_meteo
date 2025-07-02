@@ -315,7 +315,7 @@ class _EcranMeteoVilleState extends State<EcranMeteoVille>
                   children: [
                     // En-tête avec nom de ville et pays
                     Text(
-                      '${_meteo!.name}',
+                      _meteo!.name,
                       style:
                           Theme.of(context).textTheme.headlineMedium?.copyWith(
                                 fontWeight: FontWeight.bold,
