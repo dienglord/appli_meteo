@@ -1,0 +1,46 @@
+name: meteo_senegal
+description: "Application météo élégante pour le Sénégal avec interface moderne et animations fluides"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Gestion d'état et interface utilisateur
+  provider: ^6.1.1
+  
+  # Appels réseau avec Retrofit (exigence de l'examen)
+  retrofit: ^4.0.1
+  dio: ^5.3.2
+  json_annotation: ^4.8.1
+  
+  # Interface utilisateur et animations
+  percent_indicator: ^4.2.3
+  
+  # Fonctionnalités natives
+  url_launcher: ^6.2.1
+  shared_preferences: ^2.2.2
+  
+  # Icônes Material Design
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Génération de code pour Retrofit
+  retrofit_generator: ^8.0.0
+  json_serializable: ^6.6.2
+  build_runner: ^2.4.7
+  
+  # Outils de développement
+  flutter_lints: ^2.0.0
+
+# Configuration Flutter
+flutter:
+  uses-material-design: true
